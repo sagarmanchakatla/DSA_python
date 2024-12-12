@@ -24,8 +24,16 @@ def calculate(arr):
             return count
         
         count += 1
-        i += arr[i]
+        i += arr[i] 
 
     return count    
 
-print(calculate([1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]))
+# print(calculate([1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]))
+
+# print(len(str(153)))
+
+# print([1,2,3,2,1,3].remove(2))
+
+hay = "sadbutsad"
+
+print(hay.find("sad"))
