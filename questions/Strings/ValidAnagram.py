@@ -23,6 +23,4 @@ def brute(s, t):
         else:
             hashmap[i] -= 1
         
-    return True
-
-
+    return True 

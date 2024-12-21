@@ -1,15 +1,29 @@
-def calculate(nums):
-    d = dict()
-    for i in nums:
-        if i in d:
-            d[i] += 1
-        else:
-            d[i] = 1
-    print(d)
-    print(max(d.values()))
-    print(d.get)
-    print(max(d, key=d.get))
+def brute(nums):
+    n = len(nums)
 
-calculate([2,2,1,1,1,1,1,2,2,10,10,10,10,10,10,10])
+    for i in range(n):
+        c = 0
+        for j in range(n):
+            if nums[i] == nums[j]:
+                c += 1
+        if c > n/2:
+            return nums[i]
+        
+    return -1
+
+
+
+def better(nums):
+    h = {}
+    for i in nums:
+        h[i] = h.get(i, 0) + 1
+    
+    for key, val in h.items():
+        if val > len(nums)/2:
+            return key
+
+        
+
+print(brute([3, 3, 4, 2, 4, 4, 2, 4, 4]))
 
     

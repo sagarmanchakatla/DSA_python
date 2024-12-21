@@ -1,4 +1,4 @@
-def twoPointer(nums):
+def optimal(nums):
     L, C, H = 0, 0, len(nums)-1
 
     while C < H:
@@ -13,4 +13,4 @@ def twoPointer(nums):
 
     print(nums)
 
-twoPointer([1,0,2])
+optimal([1,0,2])
