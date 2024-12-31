@@ -15,4 +15,4 @@ def optimal(nums, k):
             if len(res) == k:
                 return res
             
-print(optimal([1,1,1,2,2,3], 2))
+print(optimal([1,1,1,2,2,3,3,3,3], 2))

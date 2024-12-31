@@ -11,4 +11,16 @@ def solution(nums):
     
     print(ans)
     
-solution([16, 17, 4, 3, 5, 2])
+def optimalSolution(arr):
+    n = len(arr)
+    ans = []
+    max_ele = arr[n-1]
+    ans.append(max_ele) # last element is always the leader
+
+    for i in range(n-2, -1, -1):
+        if arr[i] > max_ele:
+            max_ele = arr[i]
+            ans.append(max_ele)
+
+    print(*ans)
+solution([10, 4, 2, 4, 1])
