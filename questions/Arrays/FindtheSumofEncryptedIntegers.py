@@ -12,3 +12,4 @@ def sumOfEncryptedInt(nums):
         encrypt(nums[0])
 
 sumOfEncryptedInt([191,2,3,4,5])
+
