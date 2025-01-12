@@ -29,5 +29,4 @@ def binary(nums):
             high = mid - 1
 
 
-
 print(binary([1,1,2,3,3,4,4,8,8]))
